@@ -7,7 +7,7 @@
 				<title>What Every Gangster Should Know About Functional Programming</title>
 
 				<meta name="description" content="What Every Hipster Should Know About Functional Programming"/>
-				<meta name="author" content="NEWTON" />
+				<meta name="author" content="Sabbath" />
 
 				<meta name="apple-mobile-web-app-capable" content="yes" />
 				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -36,8 +36,8 @@
 								<section>
 										<img src="m/twilight-sparkle.jpg"/>
 										<div class="pic-label quote">
-												I use Haskell.
-												<br/>You probably wouldn't understand it.
+												The Journey towards more Expressiveness
+												<br/>Dependent Typed Programming .
 										</div>
 								</section>
          
@@ -586,6 +586,31 @@
       </code></pre>
 										
 								</section>
+								
+								
+        <section>
+ <pre class ="repl"><code>   f x = 4711 
+       
+    ⊥ is a non terminating function
+    
+       f  (True && ⊥)   ⊵    4711
+    ≔ 
+       f ⊥
+    ≔
+       4711      -- order of evaluation do't matters. </code>  </pre>								
+  <pre class = "repl">
+    Beauty of lazy eval :
+    
+  ♥   It supports equational reasoning .
+  ♥   U abstract from evaluation order. 
+     
+    That's why fp very popular for concurrency & parallelism.
+    
+    Compiler / VM can deside in which order it eval things.
+    Imperative world its dictated by lang spec.  
+  </pre>
+								</section>												
+								
 <section>
 
  <pre class="repl"><ins>Newton-Raphson Square Roots:</ins>
